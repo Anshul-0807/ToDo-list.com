@@ -5,12 +5,14 @@ import './App.css';
 
 import Header from './component/Header';
 import Todoform from './component/Todoform';
+import Todos from './component/Todos';
 
 function App() {
   return (
   <div>
     <Header/>
     <Todoform/>
+    <Todos/>
   </div>
   );
 }
