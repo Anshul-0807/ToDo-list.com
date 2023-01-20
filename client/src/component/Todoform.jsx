@@ -1,9 +1,19 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+
+import { addNewTodo } from "../redux/action";
 
 const Todoform = () => {
   const [text, setText] = useState("");
-  const onFormSubmit = () => {};
+
+  const dispatch = useDispatch();
+
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+
+    dispatch(addNewTodo(text));
+  };
 
   const onInputChange = (e) => {
     setText(e.target.value);
