@@ -4,5 +4,8 @@ const ok=()=>{
         <div>
             ok
         </div>
+        <div>
+             thats ok
+        </div>
     </>
 }
